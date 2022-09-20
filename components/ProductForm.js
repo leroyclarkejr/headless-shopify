@@ -50,9 +50,9 @@ const ProductForm = ({ product }) => {
   }
 
   return (
-    <div className="rounded-2xl p-4 shadow-lg flex flex-col w-full md:w-1/3">
+    <div className="lg:max-w-md rounded-2xl p-4 shadow-lg flex flex-col w-full">
       <h2 className="text-2xl font-bold">{product.title}</h2>
-      <span>
+      <span className="mb-4">
         {formatter.format(product.variants.edges[0].node.priceV2.amount)}
       </span>
 

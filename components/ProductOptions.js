@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
   return (
-    <fieldset>
+    <fieldset className="mb-4">
       <legend className="text-xl font-semibold">{name}</legend>
       <div className="inline-flex items center flex-wrap">
         {values.map((value) => {
